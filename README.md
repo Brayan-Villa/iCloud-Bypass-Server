@@ -5,7 +5,7 @@
 
 -Instale Ampps
 
--Compruebe su ip ( Valla a: Configuración> Red e Internet> Estado> Ver las propiedades de red> Localice la ipv4) Ejemplo: 192.168.100.1
+-Compruebe su ip ( Valla a: Configuración> Red e Internet> Estado> Ver las propiedades de red> Localize la ipv4) Ejemplo: 192.168.100.1
 
 -Utilice su php en la carpeta www de Ampps generada en la ruta de instalación
 
