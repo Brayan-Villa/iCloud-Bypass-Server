@@ -2,7 +2,7 @@
 $activation= (array_key_exists('activation-info-base64', $_POST)
                           ? base64_decode($_POST['activation-info-base64'])
                           : array_key_exists('activation-info', $_POST) ? $_POST['activation-info'] : '');
-if(!isset($activation) || empty($activation)) {  	header('location: https://LOCALIZACI√ìN DE PAGINA DE ERROR DE SU SERVIDOR/404.html'); exit('404'); }
+if(!isset($activation) || empty($activation)) { header('location: https://LOCALIZACI√É‚ÄúN DE PAGINA DE ERROR DE SU SERVIDOR/404.html'); exit('404'); }
 
 $encodedrequest = new DOMDocument;
 $encodedrequest->loadXML($activation);
@@ -33,7 +33,7 @@ for ($i = 0; $i < $nodes->length - 1; $i=$i+2) {
 }
 //----------------------------------------------------------------------FairPlayKeyData---------------------------------------------------------------------------------------------------//
 
-$fairPlayKeyData ="LS0tLS1CRUdJTiBDT05UQUlORVItLS0tLQpBQUVBQVRRVHdOS1loa1B3UDVDVlF5Ly9kYWpqMUxlMm81Q2MzV0hUSlhKdmZNVWR0bG5yOGl3T29KMVFKZkpHClpJaWF5L2dib0t2Yzc4dzZTMTh6Q0FnMVpqdENCelhubGtmNjN0Z0wwOTF3bzA4SjFYTzY1Z0VwbDNURUxqV2EKcldMSnNCbm96ZHc0RGtHZHgybzhIRi95UTFvUTljVkxRZC8xL1I2d29oUVdNRFVqS3IrWnRMUUY5Z2lsUEdzdAptQ0NGTW5nRytWZEIzdGNsVVNWUGFoSmpDZmdqSjU1eVZOZkRJVVdRSXBwVUR3OG13U1kzWlYxb1ZKY3pGWEVYCnJNUnN6LzBwMVVGRWpmRDdCci9wQkdGUUxIRVV3cjVxRmw0anM3WUxxUjQ0WVdFSmtoalo3UUF0NXAxWWVsWDIKVS95SERYZWNLUiswdDk3UUFSS1JGTEpRbGZNNnREVW9mUXlhL0o5Y0tqYTNyYncyS3VERVpjS1J6cDlHR0wyZgpqWGFjTEt6MDRIdGpmb3VBRWE5OW9uZTdrUTJ4YTFQcGxzTWdMY2VwMVhWL0tHaExvL2I0MWNrYm8wTXhkSzVtCm9sOXpBdHRyb2pwRkJUZXFMeGFxbGRUQVVxUjJMdVhBRzUrUTIzYXl5MzR0MEJmWS9NRFc4L3BvamlqZmhFRGMKekR4NWtlVmkxZ0NHSHlVb1BMa1FvYXh2aHBLdFFJOG5jMGYya1Q5VGtiaENkeTJ2N2dEMXV2U1o3SEw2aEZBVwphcFB4UWxKZjlDclh1SHZhZUMxTGZmNlpXQitlSmxVcG1DTzFNV1lnL0xlMGQrMTRpSnU0b3pmb3pMWlB1WmJTCkZISkM0c1Vrbk50Vmd4OVFIS2dTdWkzNWh1UFlhSFM3OHV1NExyZVZFZHFjdE42R0I2UW01a0k3UGdZMGlNdUgKcW9HUGhNL3F0Vms2NS83TVNMQTkvck84WnRKa2xlWkpiQnNUYmJzS2dFd1NKdU5EaGt5TVVzdWlReGllOEJMMwo0N242UnkvcWJHeFJUQ05oY3VIT05nRVlxekUwaVZTQ2FXb0JzN0Q1Tm11Q2ZEVFdMNjNhQzQ4a2FLeFNYVXJIClhHd3ZqTC9DOFBENkdDckQzU2dpMDJjMU9CNDhCUHZwWmRKY0pQbXYwSWNRUURUOUZ5UzYvSDMzQzlsWm42Y24KY1h1N0tOcXc2ZGRwNFErN0ZnQ0RWY0xucmk5TE4rczVMTGszSDJ1d3F6dGw0dkxTV3FkZG9jZkY4SDI1UTc5ZAp2VDNtRmRtOWJwS3B3YUZ3UGZnZCtabVJNWTViQmI2SXp2OTQ5Ymx6enRvd0pRam5DeHhFMVVWU0FoQlhSeG80Ckg3UjNubjU5RjJwTHQ3N0F3d2dheEpJUVNVa3preUg0d05FMDNyMFFma1JKaHBrTUlxQkwzeTBKeU5pK0p2TkIKTFhiSlRLWHN0QnZ1RmxnNFhHL3puMityMHJKUmZINHFnT25ib0FXT0lZNDhPNEZ6NjdpNHFHdjRCV1U2SktkSApDRWxQMEJwMklZM0MzVGFzMkc5UmxTNnYwY2Q5V3pFRkJ1bFY5WEt6TXdpMjZNOGMvU0xwcTl3aEIwZXdwVmxTClhXS241V09oM2gySGhQSUJpTVBvaE01blBpUUhUaDJyMGFyaXczYXNkMUVoaDA3RTdxanBxUmFuQmhuMnIwUTAKUzVFeHJBVldjYnYzVnVYWHVyL2RjWHByNjI3dHNUbi9VanlFZEd6a2NyeFllZUZPTW04NTdwSXlhRkc3SG50MQpJdUtmTnM0NlFOQURidHR1QzFGRm5RKzY2UzRWejQ0dTJ3OENEb2RoSGF3YWN2VmlTQktTNWVvbER5NWhjb1BECnBoUk1qem5jc2UzdVh6djgwNDNpc2E2amZLdEEyNUx2L1lYSzlKMFdkbmZvNUcyK0NDWk5BYUxzUFJHY0g2U1IKYk02Wk5YNlNzZkZJckU3SGMwMDdIcUJxTzJKUXZhbjdpRWJ0N3ordGtHbWJmaUhPCi0tLS0tRU5EIENPTlRBSU5FUi0tLS0tCg==";
+$fairPlayKeyData = "LS0tLS1CRUdJTiBDT05UQUlORVItLS0tLQpBQUVBQVRRVHdOS1loa1B3UDVDVlF5Ly9kYWpqMUxlMm81Q2MzV0hUSlhKdmZNVWR0bG5yOGl3T29KMVFKZkpHClpJaWF5L2dib0t2Yzc4dzZTMTh6Q0FnMVpqdENCelhubGtmNjN0Z0wwOTF3bzA4SjFYTzY1Z0VwbDNURUxqV2EKcldMSnNCbm96ZHc0RGtHZHgybzhIRi95UTFvUTljVkxRZC8xL1I2d29oUVdNRFVqS3IrWnRMUUY5Z2lsUEdzdAptQ0NGTW5nRytWZEIzdGNsVVNWUGFoSmpDZmdqSjU1eVZOZkRJVVdRSXBwVUR3OG13U1kzWlYxb1ZKY3pGWEVYCnJNUnN6LzBwMVVGRWpmRDdCci9wQkdGUUxIRVV3cjVxRmw0anM3WUxxUjQ0WVdFSmtoalo3UUF0NXAxWWVsWDIKVS95SERYZWNLUiswdDk3UUFSS1JGTEpRbGZNNnREVW9mUXlhL0o5Y0tqYTNyYncyS3VERVpjS1J6cDlHR0wyZgpqWGFjTEt6MDRIdGpmb3VBRWE5OW9uZTdrUTJ4YTFQcGxzTWdMY2VwMVhWL0tHaExvL2I0MWNrYm8wTXhkSzVtCm9sOXpBdHRyb2pwRkJUZXFMeGFxbGRUQVVxUjJMdVhBRzUrUTIzYXl5MzR0MEJmWS9NRFc4L3BvamlqZmhFRGMKekR4NWtlVmkxZ0NHSHlVb1BMa1FvYXh2aHBLdFFJOG5jMGYya1Q5VGtiaENkeTJ2N2dEMXV2U1o3SEw2aEZBVwphcFB4UWxKZjlDclh1SHZhZUMxTGZmNlpXQitlSmxVcG1DTzFNV1lnL0xlMGQrMTRpSnU0b3pmb3pMWlB1WmJTCkZISkM0c1Vrbk50Vmd4OVFIS2dTdWkzNWh1UFlhSFM3OHV1NExyZVZFZHFjdE42R0I2UW01a0k3UGdZMGlNdUgKcW9HUGhNL3F0Vms2NS83TVNMQTkvck84WnRKa2xlWkpiQnNUYmJzS2dFd1NKdU5EaGt5TVVzdWlReGllOEJMMwo0N242UnkvcWJHeFJUQ05oY3VIT05nRVlxekUwaVZTQ2FXb0JzN0Q1Tm11Q2ZEVFdMNjNhQzQ4a2FLeFNYVXJIClhHd3ZqTC9DOFBENkdDckQzU2dpMDJjMU9CNDhCUHZwWmRKY0pQbXYwSWNRUURUOUZ5UzYvSDMzQzlsWm42Y24KY1h1N0tOcXc2ZGRwNFErN0ZnQ0RWY0xucmk5TE4rczVMTGszSDJ1d3F6dGw0dkxTV3FkZG9jZkY4SDI1UTc5ZAp2VDNtRmRtOWJwS3B3YUZ3UGZnZCtabVJNWTViQmI2SXp2OTQ5Ymx6enRvd0pRam5DeHhFMVVWU0FoQlhSeG80Ckg3UjNubjU5RjJwTHQ3N0F3d2dheEpJUVNVa3preUg0d05FMDNyMFFma1JKaHBrTUlxQkwzeTBKeU5pK0p2TkIKTFhiSlRLWHN0QnZ1RmxnNFhHL3puMityMHJKUmZINHFnT25ib0FXT0lZNDhPNEZ6NjdpNHFHdjRCV1U2SktkSApDRWxQMEJwMklZM0MzVGFzMkc5UmxTNnYwY2Q5V3pFRkJ1bFY5WEt6TXdpMjZNOGMvU0xwcTl3aEIwZXdwVmxTClhXS241V09oM2gySGhQSUJpTVBvaE01blBpUUhUaDJyMGFyaXczYXNkMUVoaDA3RTdxanBxUmFuQmhuMnIwUTAKUzVFeHJBVldjYnYzVnVYWHVyL2RjWHByNjI3dHNUbi9VanlFZEd6a2NyeFllZUZPTW04NTdwSXlhRkc3SG50MQpJdUtmTnM0NlFOQURidHR1QzFGRm5RKzY2UzRWejQ0dTJ3OENEb2RoSGF3YWN2VmlTQktTNWVvbER5NWhjb1BECnBoUk1qem5jc2UzdVh6djgwNDNpc2E2amZLdEEyNUx2L1lYSzlKMFdkbmZvNUcyK0NDWk5BYUxzUFJHY0g2U1IKYk02Wk5YNlNzZkZJckU3SGMwMDdIcUJxTzJKUXZhbjdpRWJ0N3ordGtHbWJmaUhPCi0tLS0tRU5EIENPTlRBSU5FUi0tLS0tCg==";
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 //----------------------------------------------------------------------WildcardTicket---------------------------------------------------------------------------------------------------//
@@ -102,12 +102,12 @@ abkoASfcYqvIRypXnbur3bRRhTzAs4VILS6jTyFYymZeSewtBubmmigo1kCQiZGc
 J07+EHcmfGdpxwgO+7btW1pFar0ZjF9/jYKKnOYNyvCrwszhafbSYwzAG5EJoXFB
 4d+piWHUDcPxtcc=
 -----END CERTIFICATE-----');
-/*
+
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 //------------------------------------------------------------------DeviceCertificate--------------------------------------------------------------------------------------------------//
-*/
+
 $deviceCertificate =base64_encode('-----BEGIN CERTIFICATE-----
 MIIC8jCCAlugAwIBAgIJEJHd0JRzm8EzMA0GCSqGSIb3DQEBBQUAMFoxCzAJBgNV
 BAYTAlVTMRMwEQYDVQQKEwpBcHBsZSBJbmMuMRUwEwYDVQQLEwxBcHBsZSBpUGhv
@@ -125,24 +125,22 @@ BgEFBQcDAQYIKwYBBQUHAwIwEAYKKoZIhvdjZAYKAgQCBQAwDQYJKoZIhvcNAQEF
 BQADgYEAUFO9keS050dZYDLk9vH4pX/wDNZTW3ONQqOcKnW1GLR20Qnni0hCTtKE
 4DDvoMnT1EyPvSrdg21DifuXa1/YWRhaRjh7ZTCTHsvktnv5ODaS1mucvbJq/hMM
 7M97i2kMG6aGutuxM1XcPAHr3LEBJ256foKJ1Mo7+vDuUIX1/jA=
------END CERTIFICATE-----
-');
+-----END CERTIFICATE-----');
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
-//------------------------------------------------------------Codificaci√≥n de AccountToken y AccountTokenSignature--------------------------------------------------------//
+//------------------------------------------------------------Codificaci√É¬≥n de AccountToken y AccountTokenSignature--------------------------------------------------------//
 $accountTokenBase64= base64_encode($accountToken);
 $accountTokenSignature= base64_encode($signature);
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 
 //----------------------------------------------------------------activation_record.plist-----------------------------------------------------------------------------------------------//
-*/
 $signos=base64_decode('J4F6cKeBJGUiIowkJw');
 $uniquefinalroot='LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tDQpNSUlDRnpDQ0FaeWdBd0lCQWdJSU9jVXFROElDL2hzd0NnWUlLb1pJemowRUF3SXdRREVVTUJJR0ExVUVBd3dMDQpVMFZRSUZKdmIzUWdRMEV4RXpBUkJnTlZCQW9NQ2tGd2NHeGxJRWx1WXk0eEV6QVJCZ05WQkFnTUNrTmhiR2xtDQpiM0p1YVdFd0hoY05NVFl3TkRJMU1qTTBOVFEzV2hjTk1qa3dOakkwTWpFME16STBXakJGTVJNd0VRWURWUVFJDQpEQXBEWVd4cFptOXlibWxoTVJNd0VRWURWUVFLREFwQmNIQnNaU0JKYm1NdU1Sa3dGd1lEVlFRRERCQkdSRkpFDQpReTFWUTFKVUxWTlZRa05CTUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0RRZ0FFYURjMk8vTXJ1WXZQDQpWUGFVYktSN1JSem42NkIxNC84S29VTXNFRGI3bkhrR0VNWDZlQyswZ1N0R0hlNEhZTXJMeVdjYXAxdERGWW1FDQpEeWtHUTN1TTJhTjdNSGt3SFFZRFZSME9CQllFRkxTcU9rT3RHK1YremdvTU9CcTEwaG5MbFRXek1BOEdBMVVkDQpFd0VCL3dRRk1BTUJBZjh3SHdZRFZSMGpCQmd3Rm9BVVdPL1d2c1dDc0ZUTkdLYUVyYUwyZTNzNmY4OHdEZ1lEDQpWUjBQQVFIL0JBUURBZ0VHTUJZR0NTcUdTSWIzWTJRR0xBRUIvd1FHRmdSMVkzSjBNQW9HQ0NxR1NNNDlCQU1DDQpBMmtBTUdZQ01RRGY1ek5paUtOL0pxbXMxdyszQ0RZa0VTT1BpZUpNcEVrTGU5YTBValdYRUJETDBWRXNxL0NkDQpFM2FLWGtjNlIxMENNUURTNE1pV2l5bVkrUnhrdnkvaGljRERRcUkvQkwrTjNMSHF6SlpVdXcyU3gwYWZEWDdCDQo2THlLaytzTHE0dXJrTVk9DQotLS0tLUVORCBDRVJUSUZJQ0FURS0t';
 $beging='-----BEGING CERTIFICATE-----';
 $endcer='-----END CERTIFICATE-----';
-$unique='0Ç∆0Çk†a/®ëÓ0
-*ÜHŒ=0E10U
+$unique='0‚Äö√Ü0‚Äök¬†a/¬®‚Äò√Æ0
+*‚Ä†H√é=0E10U
 California10U
 
 Apple Inc.10UFDRDC-UCRT-SUBCA0
@@ -150,11 +148,11 @@ Apple Inc.10UFDRDC-UCRT-SUBCA0
 180201233032Z0n10U
 California10U
 
-Apple Inc.10Uucrt Leaf Certificate1"0 U00008015-001C0C1124D3002E0Y0*ÜHŒ=*ÜHŒ=B Ø£t¯y¿Y:…∞dÖ¸êé÷˜I^S'.$signos.'›ÎJ—¯îü¯Ze=∂›@∫!&Ï‹⁄6…uSoV£Ç0Ç0Uˇ0 0Uˇ0Å˜	*ÜHÜ˜cd
-ÅÈ1ÅÊˇÑö°íP
-0CHIP ÄˇÑ™çíD0ECID$” .ˇÜìµ¬c0bmac'.$BluetoothAddress.'ˇÜÀµ i0imei'.$imei.'ˇáõ…‹m0srnm'.$Number.'ˇá´ë“d200udid('.$uniqueDiviceID.'ˇáªµ¬c0wmac'.$BluetoothAddress.'
-*ÜHŒ=I 0F! ÅMò<JM#r÷âûhD|µ5†ˆ‚¬ ›‡‘ëÂœò;w! Î!ıÜÅªæyÛy“¬<”ë<h†
-∂>É‡‘Ú2m';
+Apple Inc.10Uucrt Leaf Certificate1"0 U00008015-001C0C1124D3002E0Y0*‚Ä†H√é=*‚Ä†H√é=B ¬Ø¬£t√∏y√ÄY:√â¬∞d‚Ä¶√º¬ê≈Ω√ñ√∑I^S'.$signos.'√ù√´J√ë√∏‚Äù≈∏√∏Ze=¬∂√ù@¬∫!&√¨√ú√ö6√âuSoV¬£‚Äö0‚Äö0U√ø0 0U√ø√∞0¬Å√∑	*‚Ä†H‚Ä†√∑cd
+¬Å√©1¬Å√¶√ø‚Äû≈°¬°‚ÄôP
+0CHIP ‚Ç¨√ø‚Äû¬™¬ç‚ÄôD0ECID$√ì .√ø‚Ä†‚Äú¬µ√Çc0bmac'.$BluetoothAddress.'√ø‚Ä†√ã¬µ√äi0imei'.$imei.'√ø‚Ä°‚Ä∫√â√úm0srnm'.$Number.'√ø‚Ä°¬´‚Äò√íd200udid('.$uniqueDiviceID.'√ø‚Ä°¬ª¬µ√Çc0wmac'.$BluetoothAddress.'
+*‚Ä†H√é=I 0F! ¬ÅMÀú<JM#r√ñ‚Ä∞≈æhD|¬µ5¬†√∂√¢√Ç √ù√†√î‚Äò√•√èÀú;w! √´!√µ‚Ä†¬Å¬ª¬æy√≥y√í√Ç<√ì‚Äò<h¬†
+¬∂>∆í√†√î√≤2m';
 $unique=base64_encode($unique);
 $keygen='ukMtH9RdSQvHzBx7FiBGr7/KcmlxX/XwoWeWnWb6IRM=';
 $uniquefinal=base64_encode(
