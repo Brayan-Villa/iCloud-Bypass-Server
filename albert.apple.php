@@ -1,7 +1,7 @@
 <?php
 /*
-	PHP DEVELOPED BY: FAILBR34K
-	MODIFIED BY: BRAYAN VILLA
+   PHP DEVELOPED BY: FAILBR34K
+   MODIFIED BY: BRAYAN VILLA
 */
 //=======================================================================================================================================//
 
